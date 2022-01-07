@@ -1,1 +1,11 @@
-
+{
+    "name": "FemoNFT",
+    "description": "https://t.me/CandyManToken",
+    "image": "https://raw.githubusercontent.com/MrHonekawa/NFT/main/original/2.png",
+    "attributes": [
+        {
+            "trait_type": "hashid",
+            "value": ""
+        }
+    ]
+}
