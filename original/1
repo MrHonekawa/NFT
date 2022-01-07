@@ -1,0 +1,11 @@
+{
+    "name": "DemoNFT",
+    "description": "https://demonft.net",
+    "image": "https://mrhonekawa.github.io/original/1.jpg",
+    "attributes": [
+        {
+            "trait_type": "hashid",
+            "value": ""
+        }
+    ]
+}
