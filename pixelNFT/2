@@ -1,11 +1,11 @@
 {
     "name": "CandyPixel",
     "description": "Candy-Pixel-NFT #2",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/MrHonekawa/NFT/main/pixelNFT/2.png",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "white"
+            "value": "yellow"
         },
         {
             "trait_type": "glasses",
