@@ -5,11 +5,11 @@
     "attributes": [
         {
             "trait_type": "background",
-            "value": "white"
+            "value": "purple"
         },
         {
             "trait_type": "glasses",
-            "value": "yes"
+            "value": "no"
         }
     ]
 }
