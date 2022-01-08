@@ -1,0 +1,15 @@
+{
+    "name": "CandyPixel",
+    "description": "Candy-Pixel-NFT #14",
+    "image": "https://raw.githubusercontent.com/MrHonekawa/NFT/main/pixelNFT/14.png",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "scene"
+        },
+        {
+            "trait_type": "glasses",
+            "value": "no"
+        }
+    ]
+}
