@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NFT TEST DEPLOYER</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div>
+    <p>Your Wallet Address - <span id="wallet-address"></span></p>
+    <button id="increase-count">MintNFT</button>
+    </div>
+    <script type="text/javascript">
+      var account = null;
+      var contract = null;
+      const ABI = [
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+];
+      const ADDRESS = "";
+      (async () => {
+        if (window.ethereum) {
+          await window.ethereum.send('eth_requestAccounts');
+          window.web3 = new Web3(window.ethereum);
+          
+          var accounts = await web3.eth.getAccounts();
+          account = accounts[0];
+          document.getElementById('wallet-address').textContent = account;
+          
+        //  contract = new web3.eth.Contract(ABI, ADDRESS);
+        //  updateCurrentCount();
+        //  document.getElementById('increase-count').onclick = () => {[
+        //    increaseCurrentCount();
+        //    }
+        }
+      })();
+    </script>
+  </body>
+</html>
