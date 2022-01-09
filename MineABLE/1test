@@ -1,7 +1,7 @@
 {
     "name": "MintNFT",
     "description": "https://mintnft.net",
-    "image": "https://raw.githubusercontent.com/MrHonekawa/NFT/main/MineABLE/1.png",
+    "image": "https://raw.githubusercontent.com/MrHonekawa/NFT/main/MineABLE/1test.png",
     "attributes": [
         {
             "trait_type": "hashid",
