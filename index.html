@@ -8,7 +8,7 @@
   <body>
     <div>
     <p>Your Wallet Address - <span id="wallet-address"></span></p>
-    <button id="increase-count">MintNFT</button>
+    <button id="mint">MintNFT</button>
     </div>
     <script type="text/javascript">
       var account = null;
@@ -514,12 +514,11 @@
           account = accounts[0];
           document.getElementById('wallet-address').textContent = account;
           
-        //  contract = new web3.eth.Contract(ABI, ADDRESS);
-        //  updateCurrentCount();
-        //  document.getElementById('increase-count').onclick = () => {[
-        //    increaseCurrentCount();
-        //    }
-        }
+          contract = new web3.eth.Contract(ABI, ADDRESS);
+	  
+	  document.getElementById('mint').onclick = () => {
+		  contracts.methods.safeMint(account).send({ from: account, value: "10000000000000000" });
+	  }
       })();
     </script>
   </body>
